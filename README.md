@@ -91,6 +91,12 @@ Our vision is to empower businesses through innovation, seamless user experience
 
 ## 5. Team Profile
 
+*Core Team:*
+- *Alex Johnson* - Lead Developer (Full Stack, Cloud Architect)
+- *Priya Sharma* - UI/UX Designer (Wireframing, User Research)
+- *David Kim* - Mobile Developer (React Native, Flutter)
+- *Sophia Liu* - DevOps Engineer (AWS, Docker, Kubernetes)
+
 *Combined Skills:*
 - Full Stack Development
 - Scalable Cloud Architecture
