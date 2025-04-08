@@ -55,7 +55,7 @@ const SampleProjects = () => {
   };
 
   const royalButtonStyle = {
-    backgroundColor: "#002C5F",
+    backgroundColor: "#003A84",
     color: "white",
     border: "none",
     padding: "10px 24px",
@@ -85,73 +85,76 @@ const SampleProjects = () => {
   };
 
   return (
-    <div className="container my-5">
-      <h2 className="text-center mb-5 fw-bold" style={{ color: "#002C5F" }}>
-        Our Projects
-      </h2>
-      <div className="row justify-content-center">
-        {sampleProjects.slice(0, visibleCount).map((project, index) => (
-          <div className="col-md-6 col-lg-4 mb-4" key={index}>
-            <div
-              className="card h-100 shadow-sm"
-              style={cardStyle}
-              onMouseEnter={handleCardHover}
-              onMouseLeave={handleCardLeave}
-            >
-              <img
-                src={project.imageUrl}
-                className="card-img-top"
-                alt={project.title}
-                style={{
-                  height: "220px",
-                  objectFit: "cover",
-                  borderBottom: "1px solid #eee",
-                }}
-              />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title" style={{ color: "#002C5F" }}>
-                  {project.title}
-                </h5>
-                <p className="card-text flex-grow-1 text-muted">
-                  {project.description}
-                </p>
-                <a
-                  href={project.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn mt-auto"
-                  style={royalButtonStyle}
-                  onMouseOver={(e) =>
-                    (e.target.style.backgroundColor =
-                      royalHoverStyle.backgroundColor)
-                  }
-                  onMouseOut={(e) =>
-                    (e.target.style.backgroundColor =
-                      royalButtonStyle.backgroundColor)
-                  }
-                >
-                  View Demo
-                </a>
+    <div style={{ backgroundColor: "white" }}>
+      <div className="container my-5">
+        <h2 className="text-center mb-5 fw-bold" style={{ color: "#003A84" }}>
+          Our Projects
+        </h2>
+        <div className="row justify-content-center">
+          {sampleProjects.slice(0, visibleCount).map((project, index) => (
+            <div className="col-md-6 col-lg-4 mb-4" key={index}>
+              <div
+                className="card h-100 shadow-sm"
+                style={cardStyle}
+                onMouseEnter={handleCardHover}
+                onMouseLeave={handleCardLeave}
+              >
+                <img
+                  src={project.imageUrl}
+                  className="card-img-top"
+                  alt={project.title}
+                  style={{
+                    height: "220px",
+                    objectFit: "cover",
+                    borderBottom: "1px solid #eee",
+                  }}
+                />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title" style={{ color: "#003A84" }}>
+                    {project.title}
+                  </h5>
+                  <p className="card-text flex-grow-1 text-muted">
+                    {project.description}
+                  </p>
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn mt-auto"
+                    style={royalButtonStyle}
+                    onMouseOver={(e) =>
+                      (e.target.style.backgroundColor =
+                        royalHoverStyle.backgroundColor)
+                    }
+                    onMouseOut={(e) =>
+                      (e.target.style.backgroundColor =
+                        royalButtonStyle.backgroundColor)
+                    }
+                  >
+                    View Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="text-center">
-        <button
-          className="btn mt-4"
-          style={royalButtonStyle}
-          onClick={handleToggleProjects}
-          onMouseOver={(e) =>
-            (e.target.style.backgroundColor = royalHoverStyle.backgroundColor)
-          }
-          onMouseOut={(e) =>
-            (e.target.style.backgroundColor = royalButtonStyle.backgroundColor)
-          }
-        >
-          {isAllVisible ? "Show Less" : "Load More"}
-        </button>
+        <div className="text-center">
+          <button
+            className="btn mt-4"
+            style={royalButtonStyle}
+            onClick={handleToggleProjects}
+            onMouseOver={(e) =>
+              (e.target.style.backgroundColor = royalHoverStyle.backgroundColor)
+            }
+            onMouseOut={(e) =>
+              (e.target.style.backgroundColor =
+                royalButtonStyle.backgroundColor)
+            }
+          >
+            {isAllVisible ? "Show Less" : "Load More"}
+          </button>
+        </div>
       </div>
     </div>
   );

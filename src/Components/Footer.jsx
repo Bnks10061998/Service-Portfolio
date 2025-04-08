@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       className="text-white pt-5 pb-4 border-top shadow-sm"
-      style={{ backgroundColor: "#002C5F" }}
+      style={{ backgroundColor: "#003A84" }}
     >
       <div className="container text-center text-md-start">
         <div className="row">
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
             <h6 className="fw-bold d-flex align-items-center gap-2">
               <img
-                src="https://github-production-user-asset-6210df.s3.amazonaws.com/96366499/431213027-065a8bec-9e87-484a-a005-7567be8bfaeb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250408T062049Z&X-Amz-Expires=300&X-Amz-Signature=7c86db19d5d7d8df8a3ded7ae531fb258d3d1d2e809d8f21919d9a06d0a019cf&X-Amz-SignedHeaders=host"
+                src="https://private-user-images.githubusercontent.com/96366499/431213027-065a8bec-9e87-484a-a005-7567be8bfaeb.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjA5MjQsIm5iZiI6MTc0NDEyMDYyNCwicGF0aCI6Ii85NjM2NjQ5OS80MzEyMTMwMjctMDY1YThiZWMtOWU4Ny00ODRhLWEwMDUtNzU2N2JlOGJmYWViLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDEzNTcwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRiNmRhMmI1NDdhZjEzNTBjOWFmMjA0ZTFiZjVmYjI5ZjhiNzJjNGY2ZTUxM2I4ZjYyNDgyNGMwNjgwMGMwMjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.rlFNtxOoQh-LuXq7NfZiclBnBl0ZRE_Vad9O015AZdg"
                 alt="logo"
                 width="40"
                 height="40"
@@ -35,23 +35,36 @@ const Footer = () => {
               <li>
                 <a
                   href="#dashboard"
-                  className="text-decoration-none text-white"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
                 >
                   Dashboard
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-decoration-none text-white">
+                <a
+                  href="#about"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-decoration-none text-white">
+                <a
+                  href="#projects"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-decoration-none text-white">
+                <a
+                  href="#contact"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Contact
                 </a>
               </li>
@@ -63,22 +76,38 @@ const Footer = () => {
             <h6 className="fw-bold">Guides</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Get Started
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Planner Guide
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Vendor Tips
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   FAQs
                 </a>
               </li>
@@ -90,22 +119,39 @@ const Footer = () => {
             <h6 className="fw-bold">Community</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none"
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Blog
                 </a>
               </li>
+
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Forum
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Support
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white">
+                <a
+                  href="#"
+                  className="text-decoration-none "
+                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                >
                   Careers
                 </a>
               </li>
@@ -115,7 +161,7 @@ const Footer = () => {
 
         {/* Footer Bottom Line */}
         <hr className="my-3" />
-        <div className="d-flex justify-content-between align-items-center flex-wrap">
+        <div className="d-flex justify-content-between align-items-center flex-wrap px-5">
           <p className="text-white small mb-0">
             © {new Date().getFullYear()} Least Action. All rights reserved.
           </p>
@@ -126,7 +172,7 @@ const Footer = () => {
               style={{
                 width: "50px",
                 height: "50px",
-                backgroundColor: "#002C5F", // outer circle
+                backgroundColor: "#003A84", // outer circle
               }}
             >
               <div
@@ -134,14 +180,14 @@ const Footer = () => {
                 style={{
                   width: "35px",
                   height: "35px",
-                  backgroundColor: "#ffffff", // inner white circle
+                  backgroundColor: "#ffffff",
                 }}
               >
                 <a
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "#002C5F", fontSize: "18px" }}
+                  style={{ color: "#003A84", fontSize: "18px" }}
                 >
                   <i className="bi bi-facebook"></i>
                 </a>
@@ -154,7 +200,7 @@ const Footer = () => {
               style={{
                 width: "50px",
                 height: "50px",
-                backgroundColor: "#002C5F",
+                backgroundColor: "#003A84",
               }}
             >
               <div
@@ -182,7 +228,7 @@ const Footer = () => {
               style={{
                 width: "50px",
                 height: "50px",
-                backgroundColor: "#002C5F",
+                backgroundColor: "#003A84",
               }}
             >
               <div

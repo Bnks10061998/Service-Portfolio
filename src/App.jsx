@@ -8,6 +8,7 @@ function App() {
     <div>
       <ScrollToTopButton />
       <SampleProjects />
+
       <Footer />
     </div>
   );

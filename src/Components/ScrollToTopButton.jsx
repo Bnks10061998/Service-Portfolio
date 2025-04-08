@@ -21,24 +21,29 @@ const ScrollToTopButton = () => {
   return (
     <>
       {showButton && (
-        <button
-          onClick={scrollToTop}
-          className="btn btn-primary"
-          style={{
-            position: "fixed",
-            bottom: "30px",
-            right: "30px",
-            borderRadius: "50%",
-            width: "45px",
-            height: "45px",
-            zIndex: "1000",
-            backgroundColor: "#00287A",
-            border: "none",
-          }}
-        >
+        <button onClick={scrollToTop} className="scroll-to-top-btn">
           <FaArrowUp color="white" />
         </button>
       )}
+
+      <style>{`
+        .scroll-to-top-btn {
+          background-color: #00287A;
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          z-index: 1000;
+          border: none;
+          transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top-btn:hover {
+          background-color: #002C5F;
+        }
+      `}</style>
     </>
   );
 };
