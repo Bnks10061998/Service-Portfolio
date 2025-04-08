@@ -3,35 +3,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const sampleProjects = [
   {
-    title: "Tamil Letters",
-    description: "Developed a responsive site with modern JavaScript features.",
+    title: "AC Repair & Servicing",
+    description: "Expert AC repair, maintenance, and gas refilling services.",
     imageUrl:
-      "https://github.com/user-attachments/assets/4edac14a-35e5-44a6-9116-c3c914458542",
-    demoUrl: "https://gdgiri.github.io/tamil-letters1/",
+      "https://t3.ftcdn.net/jpg/06/16/40/80/240_F_616408016_aFctjJXlWr9KXvJQhsJYaYHJWHLtEerS.jpg",
+    demoUrl: "#",
   },
   {
-    title: "Book App",
-    description: "Modern portfolio using React and Bootstrap.",
+    title: "Beauty Services (Men's & Women's Grooming)",
+    description: "Salon-like grooming services at your doorstep.",
     imageUrl:
-      "https://github.com/user-attachments/assets/944262b7-5e52-4e13-a36e-5ab0e7b0ab17",
-    demoUrl: "https://book-appgd.netlify.app/",
-  },
-
-  {
-    title: "Crypto Trading Platform",
-    description:
-      "Website 1 allows users to buy or sell BTC-USD, and when a transaction is made, it sends data to Website 2 for backend processing.",
-    imageUrl:
-      "https://github.com/user-attachments/assets/4ae28e6d-051d-4eb5-9425-56630b606781",
-    demoUrl: "https://trading-protocol-design.netlify.app/",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMxLOzdqgH7q07qg3OKK9sI2bcWfzizJybMlv_Q5_nBxxx8opjnwksIR1DOBR3uVVzlA&usqp=CAU",
+    demoUrl: "#",
   },
   {
-    title: "Crypto Transaction Dashboard",
-    description:
-      "Website 2 processes and stores transaction data, then forwards it to Website 3, which displays trade history in real-time.",
+    title: "Electrical Repairs & Fittings",
+    description: "Skilled electricians for all types of wiring & fittings.",
     imageUrl:
-      "https://github.com/user-attachments/assets/d39d681d-4d6f-44ef-a512-4bf8c499df47",
-    demoUrl: "https://trading-protocol-design2.netlify.app/",
+      "https://media.istockphoto.com/id/1409755712/photo/i-need-to-cut-this-cable-here.jpg?s=612x612&w=0&k=20&c=d5ItjKo_0e-ZPoCXDqbX_omyNSeNpLghhuqrduegOOU=",
+    demoUrl: "#",
+  },
+  {
+    title: "House Cleaning",
+    description: "Deep cleaning services for your entire home.",
+    imageUrl:
+      "https://content.jdmagicbox.com/v2/comp/jaipur/j3/0141px141.x141.250124142217.g6j3/catalogue/shyam-house-deep-cleaning-jaipur-vaishali-nagar-jaipur-housekeeping-services-aez0gwkmf7.jpg",
+    demoUrl: "#",
   },
 ];
 
@@ -44,7 +41,7 @@ const SampleProjects = () => {
   };
 
   const royalButtonStyle = {
-    backgroundColor: "#00287A",
+    backgroundColor: "#002C5F",
     color: "white",
     border: "none",
     padding: "10px 24px",
@@ -54,7 +51,7 @@ const SampleProjects = () => {
   };
 
   const royalHoverStyle = {
-    backgroundColor: "#3555c5",
+    backgroundColor: "#1c4a8b",
   };
 
   const cardStyle = {
@@ -75,7 +72,7 @@ const SampleProjects = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-5 fw-bold" style={{ color: "#00287A" }}>
+      <h2 className="text-center mb-5 fw-bold" style={{ color: "#002C5F" }}>
         Our Projects
       </h2>
       <div className="row justify-content-center">
@@ -98,7 +95,9 @@ const SampleProjects = () => {
                 }}
               />
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title text-primary">{project.title}</h5>
+                <h5 className="card-title" style={{ color: "#002C5F" }}>
+                  {project.title}
+                </h5>
                 <p className="card-text flex-grow-1 text-muted">
                   {project.description}
                 </p>
