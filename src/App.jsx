@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import SampleProjects from "./Pages/SampleProjects";
 
 function App() {
- 
-
   return (
-    <>
-      
-      <p>
-       Welcome to Least Action(LA) Company hi............
-      </p>
-    </>
-  )
+    <div>
+      <SampleProjects />
+    </div>
+  );
 }
 
-export default App
+export default App;
