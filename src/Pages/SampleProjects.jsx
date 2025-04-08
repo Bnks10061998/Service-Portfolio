@@ -30,6 +30,20 @@ const sampleProjects = [
       "https://content.jdmagicbox.com/v2/comp/jaipur/j3/0141px141.x141.250124142217.g6j3/catalogue/shyam-house-deep-cleaning-jaipur-vaishali-nagar-jaipur-housekeeping-services-aez0gwkmf7.jpg",
     demoUrl: "#",
   },
+  {
+    title: "Car Washing",
+    description: "Professional doorstep car wash with eco-friendly products.",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAe48OmE8AfnamDWuiTKc77NzsSpvnsfLEA&s",
+    demoUrl: "#",
+  },
+  {
+    title: "CCTV Installation & Repair",
+    description: "Secure your home with expert CCTV setup and maintenance.",
+    imageUrl:
+      "https://media.istockphoto.com/id/618550358/photo/mature-technician-installing-camera-on-wall-with-screwdriver.jpg?s=612x612&w=0&k=20&c=nSf-eXGXz59QM1Ieqwx-W0DLdZdVhkW5EccuQ4vVuRw=",
+    demoUrl: "#",
+  },
 ];
 
 const SampleProjects = () => {
