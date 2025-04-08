@@ -3,7 +3,10 @@ import "bootstrap-icons/font/bootstrap-icons.css"; // Import Bootstrap Icons
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-dark pt-5 pb-4 border-top shadow-sm">
+    <footer
+      className="text-white pt-5 pb-4 border-top shadow-sm"
+      style={{ backgroundColor: "#002C5F" }}
+    >
       <div className="container text-center text-md-start">
         <div className="row">
           {/* Logo & About */}
@@ -16,7 +19,7 @@ const Footer = () => {
                 height="40"
                 className="rounded-circle"
               />
-              <span style={{ color: "#00287A" }}>Least Action</span>
+              <span style={{ color: "#FFF" }}>Least Action</span>
             </h6>
 
             <p>
@@ -30,22 +33,25 @@ const Footer = () => {
             <h6 className="fw-bold">Links</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#dashboard" className="text-decoration-none text-dark">
+                <a
+                  href="#dashboard"
+                  className="text-decoration-none text-white"
+                >
                   Dashboard
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-decoration-none text-dark">
+                <a href="#about" className="text-decoration-none text-white">
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-decoration-none text-dark">
+                <a href="#projects" className="text-decoration-none text-white">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-decoration-none text-dark">
+                <a href="#contact" className="text-decoration-none text-white">
                   Contact
                 </a>
               </li>
@@ -57,22 +63,22 @@ const Footer = () => {
             <h6 className="fw-bold">Guides</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Get Started
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Planner Guide
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Vendor Tips
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   FAQs
                 </a>
               </li>
@@ -84,22 +90,22 @@ const Footer = () => {
             <h6 className="fw-bold">Community</h6>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Forum
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Support
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-dark">
+                <a href="#" className="text-decoration-none text-white">
                   Careers
                 </a>
               </li>
@@ -110,34 +116,93 @@ const Footer = () => {
         {/* Footer Bottom Line */}
         <hr className="my-3" />
         <div className="d-flex justify-content-between align-items-center flex-wrap">
-          <p className="text-muted small mb-0">
+          <p className="text-white small mb-0">
             © {new Date().getFullYear()} Least Action. All rights reserved.
           </p>
           <div className="d-flex gap-3">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary fs-5"
+            {/* Facebook */}
+            <div
+              className="rounded-circle d-flex align-items-center justify-content-center"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "#002C5F", // outer circle
+              }}
             >
-              <i className="bi bi-facebook"></i>
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-dark fs-5"
+              <div
+                className="rounded-circle d-flex align-items-center justify-content-center"
+                style={{
+                  width: "35px",
+                  height: "35px",
+                  backgroundColor: "#ffffff", // inner white circle
+                }}
+              >
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#002C5F", fontSize: "18px" }}
+                >
+                  <i className="bi bi-facebook"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Twitter */}
+            <div
+              className="rounded-circle d-flex align-items-center justify-content-center"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "#002C5F",
+              }}
             >
-              <i className="bi bi-twitter-x"></i>
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-danger fs-5"
+              <div
+                className="rounded-circle d-flex align-items-center justify-content-center"
+                style={{
+                  width: "35px",
+                  height: "35px",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#000000", fontSize: "18px" }}
+                >
+                  <i className="bi bi-twitter-x"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Instagram */}
+            <div
+              className="rounded-circle d-flex align-items-center justify-content-center"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "#002C5F",
+              }}
             >
-              <i className="bi bi-instagram"></i>
-            </a>
+              <div
+                className="rounded-circle d-flex align-items-center justify-content-center"
+                style={{
+                  width: "35px",
+                  height: "35px",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#E1306C", fontSize: "18px" }}
+                >
+                  <i className="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
