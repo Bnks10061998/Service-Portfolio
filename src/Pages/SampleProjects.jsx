@@ -16,6 +16,7 @@ const sampleProjects = [
       "https://github.com/user-attachments/assets/944262b7-5e52-4e13-a36e-5ab0e7b0ab17",
     demoUrl: "https://book-appgd.netlify.app/",
   },
+
   {
     title: "Crypto Trading Platform",
     description:
@@ -46,10 +47,10 @@ const SampleProjects = () => {
     backgroundColor: "#00287A",
     color: "white",
     border: "none",
-    padding: "8px 20px",
+    padding: "10px 24px",
     fontWeight: "500",
-    borderRadius: "6px",
-    transition: "background-color 0.3s ease",
+    borderRadius: "8px",
+    transition: "all 0.3s ease",
   };
 
   const royalHoverStyle = {
@@ -57,12 +58,14 @@ const SampleProjects = () => {
   };
 
   const cardStyle = {
+    borderRadius: "16px",
+    overflow: "hidden",
     transition: "all 0.3s ease-in-out",
   };
 
   const handleCardHover = (e) => {
     e.currentTarget.style.transform = "translateY(-8px) scale(1.02)";
-    e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 40, 122, 0.2)";
+    e.currentTarget.style.boxShadow = "0 10px 20px rgba(0, 40, 122, 0.15)";
   };
 
   const handleCardLeave = (e) => {
@@ -72,12 +75,12 @@ const SampleProjects = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-4" style={{ color: "#00287A" }}>
+      <h2 className="text-center mb-5 fw-bold" style={{ color: "#00287A" }}>
         Our Projects
       </h2>
-      <div className="row">
+      <div className="row justify-content-center">
         {sampleProjects.slice(0, visibleCount).map((project, index) => (
-          <div className="col-md-4 mb-4" key={index}>
+          <div className="col-md-6 col-lg-4 mb-4" key={index}>
             <div
               className="card h-100 shadow-sm"
               style={cardStyle}
@@ -88,10 +91,17 @@ const SampleProjects = () => {
                 src={project.imageUrl}
                 className="card-img-top"
                 alt={project.title}
+                style={{
+                  height: "220px",
+                  objectFit: "cover",
+                  borderBottom: "1px solid #eee",
+                }}
               />
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{project.title}</h5>
-                <p className="card-text flex-grow-1">{project.description}</p>
+                <h5 className="card-title text-primary">{project.title}</h5>
+                <p className="card-text flex-grow-1 text-muted">
+                  {project.description}
+                </p>
                 <a
                   href={project.demoUrl}
                   target="_blank"
@@ -117,7 +127,7 @@ const SampleProjects = () => {
 
       <div className="text-center">
         <button
-          className="btn mt-3"
+          className="btn mt-4"
           style={royalButtonStyle}
           onClick={handleToggleProjects}
           onMouseOver={(e) =>
