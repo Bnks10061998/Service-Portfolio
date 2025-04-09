@@ -1,4 +1,7 @@
 import "./App.css";
+import Footer from "./Components/Footer";
+import ScrollToTopButton from "./Components/ScrollToTopButton";
+
 import SampleProjects from "./Pages/SampleProjects";
 
 function App() {
@@ -6,6 +9,7 @@ function App() {
     <div>
       <ScrollToTopButton />
       <SampleProjects />
+      <Footer />
     </div>
   );
 }
