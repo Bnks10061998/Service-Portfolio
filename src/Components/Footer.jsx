@@ -20,17 +20,26 @@ const Footer = () => {
               />
               <span>Least Action</span>
             </h6>
-            <ul className="list-unstyled small text-center text-lg-start">
-              <li>
-                <i className="bi bi-geo-alt-fill me-2"></i>123 Main Street,
-                Chennai, TN - 600001
+            <ul className="list-unstyled small text-center text-lg-start m-2 p-0">
+              <li className="mb-2">
+                <i className="bi bi-geo-alt-fill me-2"></i>
+                <div className="d-inline">
+                  <span>No. 9, Thendral Nagar, </span>
+                  <br />
+                  <span className="p-4">(SP Office Backside)</span>
+                  <br />
+                  <span className="p-4">Sathuvachari, Vellore - 632009</span>
+                </div>
               </li>
-              <li>
-                <i className="bi bi-telephone-fill me-2"></i>+91 98765 43210
+
+              <li className="mb-2">
+                <i className="bi bi-telephone-fill me-2"></i>+91 88259 65775
+                <br />
+                <span className="p-4">+91 95973 66741</span>
               </li>
-              <li>
+              <li className="mb-2">
                 <i className="bi bi-envelope-fill me-2"></i>
-                support@leastaction.com
+                leastactioncompany@gmail.com
               </li>
             </ul>
           </div>
@@ -38,11 +47,14 @@ const Footer = () => {
           {/* Links */}
           <div className="col-12 col-lg-2 offset-lg-2 mb-4">
             <h6 className="fw-bold mb-3 text-center text-lg-start">Links</h6>
-            <ul className="list-unstyled small text-center text-lg-start">
+            <ul className="list-unstyled small text-center text-lg-start m-0 p-0">
               {["Dashboard", "About", "Projects", "Services", "Contact"].map(
                 (link, idx) => (
-                  <li key={idx}>
-                    <a href={`#${link.toLowerCase()}`} className="footer-link">
+                  <li key={idx} className="mb-1">
+                    <a
+                      href={`#${link.toLowerCase()}`}
+                      className="footer-link text-decoration-none"
+                    >
                       {link}
                     </a>
                   </li>
@@ -54,9 +66,9 @@ const Footer = () => {
           {/* Guides */}
           <div className="col-12 col-lg-2 mb-4">
             <h6 className="fw-bold mb-3 text-center text-lg-start">Guides</h6>
-            <ul className="list-unstyled small text-center text-lg-start">
+            <ul className="list-unstyled small text-center text-lg-start m-0 p-0">
               {["Get Started", "Planner Guide", "FAQs"].map((guide, idx) => (
-                <li key={idx}>
+                <li key={idx} className="mb-1">
                   <a href="#" className="footer-link">
                     {guide}
                   </a>
@@ -70,9 +82,9 @@ const Footer = () => {
             <h6 className="fw-bold mb-3 text-center text-lg-start">
               Community
             </h6>
-            <ul className="list-unstyled small text-center text-lg-start">
+            <ul className="list-unstyled small text-center text-lg-start m-0 p-0">
               {["Blog", "Forum", "Support", "Careers"].map((item, idx) => (
-                <li key={idx}>
+                <li key={idx} className="mb-1">
                   <a href="#" className="footer-link">
                     {item}
                   </a>
@@ -95,11 +107,20 @@ const Footer = () => {
                 color: "#003A84",
                 link: "https://facebook.com",
               },
-              { icon: "twitter-x", color: "#000000", link: "https://x.com" },
               {
                 icon: "instagram",
                 color: "#E1306C",
                 link: "https://instagram.com",
+              },
+              {
+                icon: "linkedin",
+                color: "#0077B5",
+                link: "https://instagram.com",
+              },
+              {
+                icon: "youtube",
+                color: "#FF0000",
+                link: "https://youtube.com",
               },
             ].map((social, idx) => (
               <div key={idx} className="social-icon">

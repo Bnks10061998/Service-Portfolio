@@ -1,7 +1,5 @@
 /* src/components/SampleProjects.css */
 
-
-
 .sample-container {
   background-color: white;
 }
@@ -36,7 +34,7 @@
 }
 
 .sample-desc {
-  color: #6c757d; /* Bootstrap's muted text color */
+  color: #6c757d;
   flex-grow: 1;
 }
 
@@ -52,4 +50,5 @@
 
 .royal-btn:hover {
   background-color: #1c4a8b;
+  color: white;
 }
