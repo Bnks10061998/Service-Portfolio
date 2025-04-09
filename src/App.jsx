@@ -1,6 +1,4 @@
 import "./App.css";
-import Footer from "./Components/Footer";
-import Contact from "./Pages/Contact/Contact";
 import SampleProjects from "./Pages/SampleProjects";
 
 function App() {
