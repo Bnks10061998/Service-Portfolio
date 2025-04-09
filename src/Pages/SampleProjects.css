@@ -1,0 +1,60 @@
+/* src/components/SampleProjects.css */
+
+/* ✅ Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sample-container {
+  background-color: white;
+}
+
+.sample-heading {
+  color: #003a84;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sample-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.sample-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 40, 122, 0.15);
+}
+
+.sample-img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.sample-title {
+  color: #003a84;
+}
+
+.sample-desc {
+  color: #6c757d; /* Bootstrap's muted text color */
+  flex-grow: 1;
+}
+
+.royal-btn {
+  background-color: #003a84;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.royal-btn:hover {
+  background-color: #1c4a8b;
+}

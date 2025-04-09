@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./SampleProjects.css"; // 👈 Import your custom styles
 
 const sampleProjects = [
   {
@@ -54,82 +55,27 @@ const SampleProjects = () => {
     setVisibleCount(isAllVisible ? 3 : sampleProjects.length);
   };
 
-  const royalButtonStyle = {
-    backgroundColor: "#003A84",
-    color: "white",
-    border: "none",
-    padding: "10px 24px",
-    fontWeight: "500",
-    borderRadius: "8px",
-    transition: "all 0.3s ease",
-  };
-
-  const royalHoverStyle = {
-    backgroundColor: "#1c4a8b",
-  };
-
-  const cardStyle = {
-    borderRadius: "16px",
-    overflow: "hidden",
-    transition: "all 0.3s ease-in-out",
-  };
-
-  const handleCardHover = (e) => {
-    e.currentTarget.style.transform = "translateY(-8px) scale(1.02)";
-    e.currentTarget.style.boxShadow = "0 10px 20px rgba(0, 40, 122, 0.15)";
-  };
-
-  const handleCardLeave = (e) => {
-    e.currentTarget.style.transform = "translateY(0) scale(1)";
-    e.currentTarget.style.boxShadow = "0 .5rem 1rem rgba(0,0,0,.15)";
-  };
-
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div className="sample-container">
       <div className="container my-5">
-        <h2 className="text-center mb-5 fw-bold" style={{ color: "#003A84" }}>
-          Our Projects
-        </h2>
+        <h2 className="sample-heading">Our Projects</h2>
         <div className="row justify-content-center">
           {sampleProjects.slice(0, visibleCount).map((project, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
-              <div
-                className="card h-100 shadow-sm"
-                style={cardStyle}
-                onMouseEnter={handleCardHover}
-                onMouseLeave={handleCardLeave}
-              >
+              <div className="card h-100 sample-card">
                 <img
                   src={project.imageUrl}
-                  className="card-img-top"
+                  className="card-img-top sample-img"
                   alt={project.title}
-                  style={{
-                    height: "220px",
-                    objectFit: "cover",
-                    borderBottom: "1px solid #eee",
-                  }}
                 />
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title" style={{ color: "#003A84" }}>
-                    {project.title}
-                  </h5>
-                  <p className="card-text flex-grow-1 text-muted">
-                    {project.description}
-                  </p>
+                  <h5 className="card-title sample-title">{project.title}</h5>
+                  <p className="card-text sample-desc">{project.description}</p>
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn mt-auto"
-                    style={royalButtonStyle}
-                    onMouseOver={(e) =>
-                      (e.target.style.backgroundColor =
-                        royalHoverStyle.backgroundColor)
-                    }
-                    onMouseOut={(e) =>
-                      (e.target.style.backgroundColor =
-                        royalButtonStyle.backgroundColor)
-                    }
+                    className="btn royal-btn mt-auto"
                   >
                     View Demo
                   </a>
@@ -140,18 +86,7 @@ const SampleProjects = () => {
         </div>
 
         <div className="text-center">
-          <button
-            className="btn mt-4"
-            style={royalButtonStyle}
-            onClick={handleToggleProjects}
-            onMouseOver={(e) =>
-              (e.target.style.backgroundColor = royalHoverStyle.backgroundColor)
-            }
-            onMouseOut={(e) =>
-              (e.target.style.backgroundColor =
-                royalButtonStyle.backgroundColor)
-            }
-          >
+          <button className="btn royal-btn mt-4" onClick={handleToggleProjects}>
             {isAllVisible ? "Show Less" : "Load More"}
           </button>
         </div>
