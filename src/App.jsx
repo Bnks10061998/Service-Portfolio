@@ -1,8 +1,8 @@
 import "./App.css";
-import Footer from "./Components/Footer";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
-import Contact from "./Pages/Contact/Contact";
 import SampleProjects from "./Pages/SampleProjects";
+import Footer from "./Components/Footer";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
