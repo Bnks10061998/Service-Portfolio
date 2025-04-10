@@ -8,7 +8,7 @@ const sampleProjects = [
     description:
       "A smart and seamless app to explore, read, and organise your favourite books – anytime, anywhere..",
     imageUrl:
-      "https://img.freepik.com/free-vector/audio-books-isometric-composition-with-character-female-librarian-with-book-shelves-inside-smartphone-screen-frame-vector-illustration_1284-80591.jpg",
+      "https://cdn.dribbble.com/userupload/28277525/file/original-bfbbc29b26102f1107b2282d38066029.gif",
     demoUrl: "https://book-appgd.netlify.app/",
   },
   {
@@ -16,15 +16,14 @@ const sampleProjects = [
     description:
       "Explore nature up close with Wild Lens Tourism – your gateway to the wild.",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-sXQXQmL8Gu04dKsf_-RSuuVrjxMJPCDkQ&s",
+      "https://i.pinimg.com/originals/df/0a/3e/df0a3e2ec30abb1c92d145ef165b714f.gif",
     demoUrl: "https://tubular-horse-ae26a5.netlify.app/home",
   },
   {
     title: "Counselling System",
     description:
       "An easy-to-use platform for booking confidential counselling sessions with qualified mental health professionals, anytime, anywhere",
-    imageUrl:
-      "https://img.freepik.com/premium-vector/psychological-counseling-concept-psychological-assistance-service-vector-illustration-flat_186332-972.jpg",
+    imageUrl: "https://svespsychologybvrm.in/images/Anim_Psychology.gif",
     demoUrl: "http://kaviyab-capstone-ft.netlify.app/login",
   },
   {
@@ -32,22 +31,21 @@ const sampleProjects = [
     description:
       "Learn Tamil letters – Uyir (vowels), Mei (consonants), and Uyirmei (combined letters) with pronunciation and simple examples.",
     imageUrl:
-      "https://i.ytimg.com/vi/Xqs8NHDRDrM/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHWBIAC4AOKAgwIABABGH8gRigdMA8=&rs=AOn4CLC5_ycFGErcmgpPz2DbLXjRNW5xdg",
+      "https://cdn.dribbble.com/userupload/42464860/file/original-d356504cbdfc92d2738d3b9deadbdc5c.gif",
     demoUrl: "https://gdgiri.github.io/tamil-letters1/",
   },
   {
     title: "Tour Planning",
     description:
       "Plan your perfect trip with ease – customize destinations, set budgets, and manage your itinerary all in one place.",
-    imageUrl:
-      "https://cdn.vectorstock.com/i/500p/84/27/honeymoon-trip-planning-man-and-woman-vector-55318427.jpg",
+    imageUrl: "https://img95.lovepik.com/photo/40107/3064.gif_wh860.gif",
     demoUrl: "https://capable-palmier-4f3501.netlify.app/",
   },
   {
     title: "Recipe App",
     description: "Find, cook, and save tasty recipes in one easy app.",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx9_mfRBUTHUS_CrkqmbMBBEfrBxBqm3MRw&s",
+      "https://cdn.dribbble.com/userupload/21599935/file/original-9b652c706eaa0e47ef9d833716315a8e.gif",
     demoUrl: "https://kitchen-whiz.netlify.app/",
   },
 ];
