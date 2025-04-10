@@ -1,7 +1,5 @@
 /* src/components/SampleProjects.css */
 
-
-
 .sample-container {
   background-color: white;
 }
@@ -17,18 +15,26 @@
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, #f7f9fc 0%, #e6ecf5 100%);
+  border: 1px solid #d3e0f0;
+  position: relative;
+  animation: fadeInCard 0.8s ease forwards;
+  animation-fill-mode: both;
 }
 
 .sample-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(0, 40, 122, 0.15);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 58, 132, 0.2);
+  border-color: #a5c3eb;
 }
 
 .sample-img {
   height: 220px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
+  animation: fadeImage 1s ease forwards;
+  animation-fill-mode: both;
 }
 
 .sample-title {
@@ -36,7 +42,7 @@
 }
 
 .sample-desc {
-  color: #6c757d; /* Bootstrap's muted text color */
+  color: #6c757d;
   flex-grow: 1;
 }
 
@@ -52,4 +58,68 @@
 
 .royal-btn:hover {
   background-color: #1c4a8b;
+  color: white;
+}
+
+@keyframes fadeImage {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sample-card:hover .sample-img {
+  animation: fadeImage 0.5s ease forwards;
+  animation-fill-mode: both;
+}
+.sample-card:hover .sample-title {
+  color: #1c4a8b;
+}
+
+.sample-card:hover .sample-desc {
+  color: #495057;
+}
+.sample-card:hover .royal-btn {
+  background-color: #1c4a8b;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:hover {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:active {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus-within {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
+}
+
+.sample-card:hover .royal-btn:focus-within {
+  background-color: #003a84;
+  color: white;
+}
+.sample-card:hover .royal-btn:focus-visible {
+  background-color: #003a84;
+  color: white;
 }

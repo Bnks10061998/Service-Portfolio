@@ -1,58 +1,72 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./SampleProjects.css"; // 👈 Import your custom styles
+import "./SampleProjects.css";
 
 const sampleProjects = [
   {
-    title: "AC Repair & Servicing",
-    description: "Expert AC repair, maintenance, and gas refilling services.",
+    title: "Book App",
+    description:
+      "A smart and seamless app to explore, read, and organise your favourite books – anytime, anywhere..",
     imageUrl:
-      "https://t3.ftcdn.net/jpg/06/16/40/80/240_F_616408016_aFctjJXlWr9KXvJQhsJYaYHJWHLtEerS.jpg",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/28277525/file/original-bfbbc29b26102f1107b2282d38066029.gif",
+    demoUrl: "https://book-appgd.netlify.app/",
   },
   {
-    title: "Beauty Services (Men's & Women's Grooming)",
-    description: "Salon-like grooming services at your doorstep.",
+    title: "Wild Lens Tourism",
+    description:
+      "Explore nature up close with Wild Lens Tourism – your gateway to the wild.",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMxLOzdqgH7q07qg3OKK9sI2bcWfzizJybMlv_Q5_nBxxx8opjnwksIR1DOBR3uVVzlA&usqp=CAU",
-    demoUrl: "#",
+      "https://i.pinimg.com/originals/df/0a/3e/df0a3e2ec30abb1c92d145ef165b714f.gif",
+    demoUrl: "https://tubular-horse-ae26a5.netlify.app/home",
   },
   {
-    title: "Electrical Repairs & Fittings",
-    description: "Skilled electricians for all types of wiring & fittings.",
-    imageUrl:
-      "https://media.istockphoto.com/id/1409755712/photo/i-need-to-cut-this-cable-here.jpg?s=612x612&w=0&k=20&c=d5ItjKo_0e-ZPoCXDqbX_omyNSeNpLghhuqrduegOOU=",
-    demoUrl: "#",
+    title: "Counselling System",
+    description:
+      "An easy-to-use platform for booking confidential counselling sessions with qualified mental health professionals, anytime, anywhere",
+    imageUrl: "https://svespsychologybvrm.in/images/Anim_Psychology.gif",
+    demoUrl: "http://kaviyab-capstone-ft.netlify.app/login",
   },
   {
-    title: "House Cleaning",
-    description: "Deep cleaning services for your entire home.",
+    title: "Tamil Letters Learning",
+    description:
+      "Learn Tamil letters – Uyir (vowels), Mei (consonants), and Uyirmei (combined letters) with pronunciation and simple examples.",
     imageUrl:
-      "https://content.jdmagicbox.com/v2/comp/jaipur/j3/0141px141.x141.250124142217.g6j3/catalogue/shyam-house-deep-cleaning-jaipur-vaishali-nagar-jaipur-housekeeping-services-aez0gwkmf7.jpg",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/42464860/file/original-d356504cbdfc92d2738d3b9deadbdc5c.gif",
+    demoUrl: "https://gdgiri.github.io/tamil-letters1/",
   },
   {
-    title: "Car Washing",
-    description: "Professional doorstep car wash with eco-friendly products.",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAe48OmE8AfnamDWuiTKc77NzsSpvnsfLEA&s",
-    demoUrl: "#",
+    title: "Tour Planning",
+    description:
+      "Plan your perfect trip with ease – customize destinations, set budgets, and manage your itinerary all in one place.",
+    imageUrl: "https://img95.lovepik.com/photo/40107/3064.gif_wh860.gif",
+    demoUrl: "https://capable-palmier-4f3501.netlify.app/",
   },
   {
-    title: "CCTV Installation & Repair",
-    description: "Secure your home with expert CCTV setup and maintenance.",
+    title: "Recipe App",
+    description: "Find, cook, and save tasty recipes in one easy app.",
     imageUrl:
-      "https://media.istockphoto.com/id/618550358/photo/mature-technician-installing-camera-on-wall-with-screwdriver.jpg?s=612x612&w=0&k=20&c=nSf-eXGXz59QM1Ieqwx-W0DLdZdVhkW5EccuQ4vVuRw=",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/21599935/file/original-9b652c706eaa0e47ef9d833716315a8e.gif",
+    demoUrl: "https://kitchen-whiz.netlify.app/",
   },
 ];
 
 const SampleProjects = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const defaultCount = 3;
+  const [visibleCount, setVisibleCount] = useState(defaultCount);
+
+  useEffect(() => {
+    const savedCount = localStorage.getItem("visibleCount");
+    if (savedCount) {
+      setVisibleCount(Number(savedCount));
+    }
+  }, []);
+
   const isAllVisible = visibleCount >= sampleProjects.length;
 
   const handleToggleProjects = () => {
-    setVisibleCount(isAllVisible ? 3 : sampleProjects.length);
+    const newCount = isAllVisible ? defaultCount : sampleProjects.length;
+    setVisibleCount(newCount);
+    localStorage.setItem("visibleCount", newCount);
   };
 
   return (
