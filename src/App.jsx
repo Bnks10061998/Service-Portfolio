@@ -7,9 +7,9 @@ import Services from "./Pages/Services";
 function App() {
   return (
     <div>
+      <Services />
       <ScrollToTopButton />
       <SampleProjects />
-      <Services />
       <Footer />
     </div>
   );
