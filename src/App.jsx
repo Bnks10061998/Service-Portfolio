@@ -11,11 +11,7 @@ function App() {
       <Services />
       <ScrollToTopButton />
       <SampleProjects />
-<<<<<<< HEAD
-=======
       <Contact />
-
->>>>>>> 970d993ebd987cd6f2b02bf5d131c4c059ca9de7
       <Footer />
     </div>
   );
