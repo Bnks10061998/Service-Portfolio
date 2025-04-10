@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./SampleProjects.css"; // 👈 Import your custom styles
+import "./SampleProjects.css";
 
 const sampleProjects = [
   {
@@ -53,11 +53,22 @@ const sampleProjects = [
 ];
 
 const SampleProjects = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const defaultCount = 3;
+  const [visibleCount, setVisibleCount] = useState(defaultCount);
+
+  useEffect(() => {
+    const savedCount = localStorage.getItem("visibleCount");
+    if (savedCount) {
+      setVisibleCount(Number(savedCount));
+    }
+  }, []);
+
   const isAllVisible = visibleCount >= sampleProjects.length;
 
   const handleToggleProjects = () => {
-    setVisibleCount(isAllVisible ? 3 : sampleProjects.length);
+    const newCount = isAllVisible ? defaultCount : sampleProjects.length;
+    setVisibleCount(newCount);
+    localStorage.setItem("visibleCount", newCount);
   };
 
   return (
