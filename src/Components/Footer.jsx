@@ -1,256 +1,131 @@
 import React from "react";
-import "bootstrap-icons/font/bootstrap-icons.css"; // Import Bootstrap Icons
+import image from "../assets/la.jpg";
 
 const Footer = () => {
   return (
     <footer
-      className="text-white pt-5 pb-4 border-top shadow-sm"
-      style={{ backgroundColor: "#003A84" }}
+      className="text-center text-lg-start text-white"
+      style={{ backgroundColor: "#003a84" }}
     >
-      <div className="container text-center text-md-start">
-        <div className="row">
-          {/* Logo & About */}
-          <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-            <h6 className="fw-bold d-flex align-items-center gap-2">
-              <img
-                src="https://private-user-images.githubusercontent.com/96366499/431213027-065a8bec-9e87-484a-a005-7567be8bfaeb.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjA5MjQsIm5iZiI6MTc0NDEyMDYyNCwicGF0aCI6Ii85NjM2NjQ5OS80MzEyMTMwMjctMDY1YThiZWMtOWU4Ny00ODRhLWEwMDUtNzU2N2JlOGJmYWViLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDEzNTcwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRiNmRhMmI1NDdhZjEzNTBjOWFmMjA0ZTFiZjVmYjI5ZjhiNzJjNGY2ZTUxM2I4ZjYyNDgyNGMwNjgwMGMwMjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.rlFNtxOoQh-LuXq7NfZiclBnBl0ZRE_Vad9O015AZdg"
-                alt="logo"
-                width="40"
-                height="40"
-                className="rounded-circle"
-              />
-              <span style={{ color: "#FFF" }}>Least Action</span>
-            </h6>
-
-            <p>
-              Designed and built with 💖 by the Least Action team — your trusted
-              service partner in turning wedding dreams into reality.
-            </p>
-          </div>
-
-          {/* Links */}
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 className="fw-bold">Links</h6>
-            <ul className="list-unstyled">
-              <li>
-                <a
-                  href="#dashboard"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Guides */}
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 className="fw-bold">Guides</h6>
-            <ul className="list-unstyled">
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Get Started
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Planner Guide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Vendor Tips
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  FAQs
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Community */}
-          <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-            <h6 className="fw-bold">Community</h6>
-            <ul className="list-unstyled">
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none"
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Blog
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Forum
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Support
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-decoration-none "
-                  style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                >
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </div>
+      {/* Social Section */}
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div className="me-5 pt-2 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
         </div>
 
-        {/* Footer Bottom Line */}
-        <hr className="my-3" />
-        <div className="d-flex justify-content-between align-items-center flex-wrap px-5">
-          <p className="text-white small mb-0">
-            © {new Date().getFullYear()} Least Action. All rights reserved.
-          </p>
-          <div className="d-flex gap-3">
-            {/* Facebook */}
-            <div
-              className="rounded-circle d-flex align-items-center justify-content-center"
-              style={{
-                width: "50px",
-                height: "50px",
-                backgroundColor: "#003A84", // outer circle
-              }}
-            >
-              <div
-                className="rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  width: "35px",
-                  height: "35px",
-                  backgroundColor: "#ffffff",
-                }}
-              >
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "#003A84", fontSize: "18px" }}
-                >
-                  <i className="bi bi-facebook"></i>
-                </a>
-              </div>
+        <div>
+          {["facebook", "instagram", "linkedin", "github", "youtube"].map(
+            (icon, idx) => (
+              <a key={idx} href="#!" className="me-4 text-reset fs-4 text-white">
+                <i className={`bi bi-${icon}`}></i>
+              </a>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section>
+        <div className="container text-center text-md-start mt-5">
+          <div className="row mt-3">
+            {/* Company Info */}
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h4 className="text-uppercase fw-bold mb-4">
+                <img
+                  src={image}
+                  alt="logo"
+                  width="65"
+                  height="65"
+                  className="rounded-circle"
+                />
+                <span> Least Action</span>
+              </h4>
+              <p>
+                At Least Action, we deliver professional, user-friendly websites
+                with a focus on innovation, trust, and quality — Turning your
+                vision into reality.
+              </p>
             </div>
 
-            {/* Twitter */}
-            <div
-              className="rounded-circle d-flex align-items-center justify-content-center"
-              style={{
-                width: "50px",
-                height: "50px",
-                backgroundColor: "#003A84",
-              }}
-            >
-              <div
-                className="rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  width: "35px",
-                  height: "35px",
-                  backgroundColor: "#ffffff",
-                }}
-              >
-                <a
-                  href="https://x.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "#000000", fontSize: "18px" }}
-                >
-                  <i className="bi bi-twitter-x"></i>
-                </a>
-              </div>
+            {/* Products */}
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Links</h6>
+              {["Dashboard", "About us", "Services", "Projects"].map(
+                (item, idx) => (
+                  <p key={idx}>
+                    <a href="#!" className="text-white text-decoration-none">
+                      {item}
+                    </a>
+                  </p>
+                )
+              )}
             </div>
 
-            {/* Instagram */}
-            <div
-              className="rounded-circle d-flex align-items-center justify-content-center"
-              style={{
-                width: "50px",
-                height: "50px",
-                backgroundColor: "#003A84",
-              }}
-            >
-              <div
-                className="rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  width: "35px",
-                  height: "35px",
-                  backgroundColor: "#ffffff",
-                }}
-              >
+            {/* Useful Links */}
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Guides</h6>
+              {["Get start", "Contacy us", "FAQ", "Help"].map((item, idx) => (
+                <p key={idx}>
+                  <a href="#!" className="text-white text-decoration-none">
+                    {item}
+                  </a>
+                </p>
+              ))}
+            </div>
+
+            {/* Contact Info */}
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i className="bi bi-geo-fill me-2"></i>
+                No. 9, Thendral Nagar, <br />
+                <span className="p-4"> Sathuvachari, Vellore - 632009</span>
+                
+              </p>
+              <p>
+                <i className="bi bi-envelope-fill me-2"></i>
                 <a
-                  href="https://instagram.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=leastactioncompany@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "#E1306C", fontSize: "18px" }}
+                  className="text-white text-decoration-none"
                 >
-                  <i className="bi bi-instagram"></i>
+                  leastactioncompany@gmail.com
                 </a>
-              </div>
+              </p>
+              <p>
+                <i className="bi bi-telephone-fill me-2"></i>
+                <a
+                  href="tel:+918825965775"
+                  className="text-white text-decoration-none"
+                >
+                  +91 88259 65775
+                </a>
+              </p>
+
+              <p>
+                <i className="bi bi-telephone-fill me-2"></i>
+                <a
+                  href="tel:+919597366741"
+                  className="text-white text-decoration-none"
+                >
+                  +91 95973 66741
+                </a>
+              </p>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Footer Bottom Bar */}
+      <div
+        className="text-center p-3"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+      >
+        © {new Date().getFullYear()} Copyright:
+        <a className="text-white fw-bold ms-1" href="https://leastaction.com">
+          Leastaction.com
+        </a>
       </div>
     </footer>
   );

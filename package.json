@@ -10,9 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
+<<<<<<< HEAD
     "mdb-react-ui-kit": "^9.0.0",
+=======
+    "formik": "^2.4.6",
+    "framer-motion": "^12.6.3",
+    "lottie-react": "^2.4.1",
+>>>>>>> 970d993ebd987cd6f2b02bf5d131c4c059ca9de7
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",

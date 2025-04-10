@@ -1,135 +1,95 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./SampleProjects.css";
 
 const sampleProjects = [
   {
-    title: "AC Repair & Servicing",
-    description: "Expert AC repair, maintenance, and gas refilling services.",
+    title: "Book App",
+    description:
+      "A smart and seamless app to explore, read, and organise your favourite books – anytime, anywhere..",
     imageUrl:
-      "https://t3.ftcdn.net/jpg/06/16/40/80/240_F_616408016_aFctjJXlWr9KXvJQhsJYaYHJWHLtEerS.jpg",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/28277525/file/original-bfbbc29b26102f1107b2282d38066029.gif",
+    demoUrl: "https://book-appgd.netlify.app/",
   },
   {
-    title: "Beauty Services (Men's & Women's Grooming)",
-    description: "Salon-like grooming services at your doorstep.",
+    title: "Wild Lens Tourism",
+    description:
+      "Explore nature up close with Wild Lens Tourism – your gateway to the wild.",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMxLOzdqgH7q07qg3OKK9sI2bcWfzizJybMlv_Q5_nBxxx8opjnwksIR1DOBR3uVVzlA&usqp=CAU",
-    demoUrl: "#",
+      "https://i.pinimg.com/originals/df/0a/3e/df0a3e2ec30abb1c92d145ef165b714f.gif",
+    demoUrl: "https://tubular-horse-ae26a5.netlify.app/home",
   },
   {
-    title: "Electrical Repairs & Fittings",
-    description: "Skilled electricians for all types of wiring & fittings.",
-    imageUrl:
-      "https://media.istockphoto.com/id/1409755712/photo/i-need-to-cut-this-cable-here.jpg?s=612x612&w=0&k=20&c=d5ItjKo_0e-ZPoCXDqbX_omyNSeNpLghhuqrduegOOU=",
-    demoUrl: "#",
+    title: "Counselling System",
+    description:
+      "An easy-to-use platform for booking confidential counselling sessions with qualified mental health professionals, anytime, anywhere",
+    imageUrl: "https://svespsychologybvrm.in/images/Anim_Psychology.gif",
+    demoUrl: "http://kaviyab-capstone-ft.netlify.app/login",
   },
   {
-    title: "House Cleaning",
-    description: "Deep cleaning services for your entire home.",
+    title: "Tamil Letters Learning",
+    description:
+      "Learn Tamil letters – Uyir (vowels), Mei (consonants), and Uyirmei (combined letters) with pronunciation and simple examples.",
     imageUrl:
-      "https://content.jdmagicbox.com/v2/comp/jaipur/j3/0141px141.x141.250124142217.g6j3/catalogue/shyam-house-deep-cleaning-jaipur-vaishali-nagar-jaipur-housekeeping-services-aez0gwkmf7.jpg",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/42464860/file/original-d356504cbdfc92d2738d3b9deadbdc5c.gif",
+    demoUrl: "https://gdgiri.github.io/tamil-letters1/",
   },
   {
-    title: "Car Washing",
-    description: "Professional doorstep car wash with eco-friendly products.",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAe48OmE8AfnamDWuiTKc77NzsSpvnsfLEA&s",
-    demoUrl: "#",
+    title: "Tour Planning",
+    description:
+      "Plan your perfect trip with ease – customize destinations, set budgets, and manage your itinerary all in one place.",
+    imageUrl: "https://img95.lovepik.com/photo/40107/3064.gif_wh860.gif",
+    demoUrl: "https://capable-palmier-4f3501.netlify.app/",
   },
   {
-    title: "CCTV Installation & Repair",
-    description: "Secure your home with expert CCTV setup and maintenance.",
+    title: "Recipe App",
+    description: "Find, cook, and save tasty recipes in one easy app.",
     imageUrl:
-      "https://media.istockphoto.com/id/618550358/photo/mature-technician-installing-camera-on-wall-with-screwdriver.jpg?s=612x612&w=0&k=20&c=nSf-eXGXz59QM1Ieqwx-W0DLdZdVhkW5EccuQ4vVuRw=",
-    demoUrl: "#",
+      "https://cdn.dribbble.com/userupload/21599935/file/original-9b652c706eaa0e47ef9d833716315a8e.gif",
+    demoUrl: "https://kitchen-whiz.netlify.app/",
   },
 ];
 
 const SampleProjects = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const defaultCount = 3;
+  const [visibleCount, setVisibleCount] = useState(defaultCount);
+
+  useEffect(() => {
+    const savedCount = localStorage.getItem("visibleCount");
+    if (savedCount) {
+      setVisibleCount(Number(savedCount));
+    }
+  }, []);
+
   const isAllVisible = visibleCount >= sampleProjects.length;
 
   const handleToggleProjects = () => {
-    setVisibleCount(isAllVisible ? 3 : sampleProjects.length);
-  };
-
-  const royalButtonStyle = {
-    backgroundColor: "#003A84",
-    color: "white",
-    border: "none",
-    padding: "10px 24px",
-    fontWeight: "500",
-    borderRadius: "8px",
-    transition: "all 0.3s ease",
-  };
-
-  const royalHoverStyle = {
-    backgroundColor: "#1c4a8b",
-  };
-
-  const cardStyle = {
-    borderRadius: "16px",
-    overflow: "hidden",
-    transition: "all 0.3s ease-in-out",
-  };
-
-  const handleCardHover = (e) => {
-    e.currentTarget.style.transform = "translateY(-8px) scale(1.02)";
-    e.currentTarget.style.boxShadow = "0 10px 20px rgba(0, 40, 122, 0.15)";
-  };
-
-  const handleCardLeave = (e) => {
-    e.currentTarget.style.transform = "translateY(0) scale(1)";
-    e.currentTarget.style.boxShadow = "0 .5rem 1rem rgba(0,0,0,.15)";
+    const newCount = isAllVisible ? defaultCount : sampleProjects.length;
+    setVisibleCount(newCount);
+    localStorage.setItem("visibleCount", newCount);
   };
 
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div className="sample-container">
       <div className="container my-5">
-        <h2 className="text-center mb-5 fw-bold" style={{ color: "#003A84" }}>
-          Our Projects
-        </h2>
+        <h2 className="sample-heading">Our Projects</h2>
         <div className="row justify-content-center">
           {sampleProjects.slice(0, visibleCount).map((project, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
-              <div
-                className="card h-100 shadow-sm"
-                style={cardStyle}
-                onMouseEnter={handleCardHover}
-                onMouseLeave={handleCardLeave}
-              >
+              <div className="card h-100 sample-card">
                 <img
                   src={project.imageUrl}
-                  className="card-img-top"
+                  className="card-img-top sample-img"
                   alt={project.title}
-                  style={{
-                    height: "220px",
-                    objectFit: "cover",
-                    borderBottom: "1px solid #eee",
-                  }}
                 />
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title" style={{ color: "#003A84" }}>
-                    {project.title}
-                  </h5>
-                  <p className="card-text flex-grow-1 text-muted">
-                    {project.description}
-                  </p>
+                  <h5 className="card-title sample-title">{project.title}</h5>
+                  <p className="card-text sample-desc">{project.description}</p>
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn mt-auto"
-                    style={royalButtonStyle}
-                    onMouseOver={(e) =>
-                      (e.target.style.backgroundColor =
-                        royalHoverStyle.backgroundColor)
-                    }
-                    onMouseOut={(e) =>
-                      (e.target.style.backgroundColor =
-                        royalButtonStyle.backgroundColor)
-                    }
+                    className="btn royal-btn mt-auto"
                   >
                     View Demo
                   </a>
@@ -140,18 +100,7 @@ const SampleProjects = () => {
         </div>
 
         <div className="text-center">
-          <button
-            className="btn mt-4"
-            style={royalButtonStyle}
-            onClick={handleToggleProjects}
-            onMouseOver={(e) =>
-              (e.target.style.backgroundColor = royalHoverStyle.backgroundColor)
-            }
-            onMouseOut={(e) =>
-              (e.target.style.backgroundColor =
-                royalButtonStyle.backgroundColor)
-            }
-          >
+          <button className="btn royal-btn mt-4" onClick={handleToggleProjects}>
             {isAllVisible ? "Show Less" : "Load More"}
           </button>
         </div>
