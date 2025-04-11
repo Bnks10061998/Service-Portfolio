@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./SampleProjects.css";
+import "./SampleProjects.css"; // Import your custom CSS file
 
 const sampleProjects = [
   {

@@ -15,7 +15,7 @@
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.25);
   background: linear-gradient(135deg, #f7f9fc 0%, #e6ecf5 100%);
   border: 1px solid #d3e0f0;
   position: relative;
@@ -25,7 +25,7 @@
 
 .sample-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 58, 132, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.25);
   border-color: #a5c3eb;
 }
 
