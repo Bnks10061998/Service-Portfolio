@@ -1,0 +1,100 @@
+.home-header {
+    padding-top: 80px !important;
+    color: aliceblue;
+}
+.curved-border {
+    height: 650px;
+    
+    background: linear-gradient(110deg, #003A84);
+    
+    border-bottom-right-radius: 100% 90%;
+    /* border-bottom-left-radius: 70% 70%; */
+  }
+  /* ShakeImage.css */
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px); }
+    40% { transform: translate(5px); }
+    60% { transform: translate(-5px); }
+    80% { transform: translate(5px); }
+    100% { transform: translate(0); }
+  }
+  
+.img-fluid{
+    animation: shake 20s infinite;
+    height: auto;
+    width: 150%;
+    max-width: 650px;
+  }
+  .contact-us-btn {
+    background: linear-gradient(90deg, #fc466b, #3f5efb); /* Adjusted to match gradient */
+    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Closer match from image */
+    color: #0000ff; /* Bright blue text */
+    padding: 12px 35px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 0.3s ease;
+    box-shadow: none;
+  }
+  
+  .contact-us-btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+  .wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+/* about */
+  .stat-card {
+    background-color: #fff;
+    border-radius: 1rem; /* rounded corners */
+    min-width: 150px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* soft shadow */
+    transition: transform 0.2s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .text-primary-dark {
+    color: #070249; /* dark blue tone */
+  }
+  
+  
+  

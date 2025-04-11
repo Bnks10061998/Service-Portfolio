@@ -130,7 +130,7 @@ const Services = () => {
               <img
                 src={selectedService?.img}
                 alt={selectedService?.title}
-                className="img-fluid mb-3"
+                className="img-fluids mb-3"
                 style={{ borderRadius: '10px' }}
               />
               <p className="text-white">{selectedService?.description}</p>
