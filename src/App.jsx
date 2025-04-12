@@ -9,10 +9,10 @@ import About from "./Pages/About";
 function App() {
   return (
     <div>
+      <ScrollToTopButton />
       <Home />
       <About />
       <Services />
-      <ScrollToTopButton />
       <SampleProjects />
       <Contact />
       <Footer />

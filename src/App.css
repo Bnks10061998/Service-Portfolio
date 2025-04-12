@@ -45,6 +45,13 @@
 .img-fluid {
   animation: shake 20s infinite;
   height: auto;
+  width: 150%;
+  max-width: 130%;
+}
+
+.img-fluids {
+  animation: shake 20s infinite;
+  height: auto;
   width: 100%;
   max-width: 100%;
 }
@@ -53,8 +60,12 @@
 
 /* Contact Button */
 .contact-us-btn {
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
-  color: #0000ff;
+  background: linear-gradient(
+    90deg,
+    #008a44,
+    #00c776
+  ); /* updated green gradient */
+  color: #ffffff; /* white text for contrast */
   padding: 12px 35px;
   border: none;
   font-size: 16px;

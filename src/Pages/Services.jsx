@@ -1,43 +1,55 @@
-import React, { useEffect, useRef, useState } from 'react';
-import VanillaTilt from 'vanilla-tilt';
-import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
+import React, { useEffect, useRef, useState } from "react";
+import VanillaTilt from "vanilla-tilt";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const services = [
   {
-    title: 'Website Design & Development',
-    description: 'Modern, responsive, and SEO-optimized websites that represent your brand and engage your audience.',
-    img: '../../public/wd.png',
-    moreInfo: 'From static landing pages to full-stack dynamic platforms, we create web experiences that captivate users and boost conversions.'
+    title: "Website Design & Development",
+    description:
+      "Modern, responsive, and SEO-optimized websites that represent your brand and engage your audience.",
+    img: "../../public/wd.png",
+    moreInfo:
+      "From static landing pages to full-stack dynamic platforms, we create web experiences that captivate users and boost conversions.",
   },
   {
-    title: 'Mobile App Development',
-    description: 'Innovative and user-friendly mobile apps for Android and iOS that boost business growth.',
-    img: '../../public/mad.png',
-    moreInfo: 'We build performance-optimized native and cross-platform mobile applications tailored to your business needs.'
+    title: "Mobile App Development",
+    description:
+      "Innovative and user-friendly mobile apps for Android and iOS that boost business growth.",
+    img: "../../public/mad.png",
+    moreInfo:
+      "We build performance-optimized native and cross-platform mobile applications tailored to your business needs.",
   },
   {
-    title: 'UI/UX Designing',
-    description: '"Designing user-friendly, secure experiences for a safer digital world."',
-    img: './ui.png',
-    moreInfo: 'Blending aesthetic design with cutting-edge security, our UI/UX approach ensures seamless, safe, user-centric digital experiences.'
+    title: "UI/UX Designing",
+    description:
+      '"Designing user-friendly, secure experiences for a safer digital world."',
+    img: "./ui.png",
+    moreInfo:
+      "Blending aesthetic design with cutting-edge security, our UI/UX approach ensures seamless, safe, user-centric digital experiences.",
   },
   {
-    title: 'Custom Software Development',
-    description: 'Tailored software solutions designed to streamline your business operations and enhance productivity.',
-    img: '../../public/csd.png',
-    moreInfo: 'We analyze your workflow and develop software solutions that improve performance and scalability across departments.'
+    title: "Custom Software Development",
+    description:
+      "Tailored software solutions designed to streamline your business operations and enhance productivity.",
+    img: "../../public/csd.png",
+    moreInfo:
+      "We analyze your workflow and develop software solutions that improve performance and scalability across departments.",
   },
   {
-    title: 'Cloud Services',
-    description: 'Secure and scalable cloud solutions for data storage, backup, and infrastructure management.',
-    img: '../../public/cloud.png',
-    moreInfo: 'We assist in migrating to the cloud, managing cloud infrastructure, and integrating cloud-native tools for optimized performance.'
+    title: "Cloud Services",
+    description:
+      "Secure and scalable cloud solutions for data storage, backup, and infrastructure management.",
+    img: "../../public/cloud.png",
+    moreInfo:
+      "We assist in migrating to the cloud, managing cloud infrastructure, and integrating cloud-native tools for optimized performance.",
   },
   {
-    title: 'IT Support & Maintenance',
-    description: '24/7 technical support and maintenance services to keep your systems running smoothly and efficiently.',
-    img: '../../public/itm.png',
-    moreInfo: 'Get proactive monitoring, instant issue resolution, and long-term IT infrastructure support.'
+    title: "IT Support & Maintenance",
+    description:
+      "24/7 technical support and maintenance services to keep your systems running smoothly and efficiently.",
+    img: "../../public/itm.png",
+    moreInfo:
+      "Get proactive monitoring, instant issue resolution, and long-term IT infrastructure support.",
   },
 ];
 
@@ -53,7 +65,7 @@ const Services = () => {
           max: 10,
           speed: 400,
           glare: true,
-          'max-glare': 0.2,
+          "max-glare": 0.2,
         });
       }
     });
@@ -74,44 +86,46 @@ const Services = () => {
       id="services"
       className="py-3"
       style={{
-        backgroundColor: 'white',
-        minHeight: '100vh',
+        backgroundColor: "white",
       }}
     >
       <Container>
-        <h2 className="text-center mb-4 fw-bold" style={{ color: "#003A84" }}>Our Services</h2>
+        <h2 className="text-center mb-4 fw-bold" style={{ color: "#003A84" }}>
+          Our Services
+        </h2>
         <Row>
           {services.map((service, index) => (
             <Col md={6} lg={4} className="mb-4" key={index}>
               <div
-                className="glass-card tilt-card"
+                className="glass-card tilt-card h-100"
                 ref={(el) => (cardRefs.current[index] = el)}
               >
                 <div className="border-line"></div>
-                <Card className="h-100 bg-transparent text-white">
+                <Card className="h-100 bg-transparent text-white d-flex flex-column">
                   <Card.Img
                     variant="top"
                     src={service.img}
                     alt={service.title}
+                    className="card-img-top"
                     style={{
-                      height: '150px',
-                      objectFit: 'cover',
+                      height: "150px",
+                      objectFit: "cover",
                     }}
                   />
-                  <Card.Body style={{ color: "#003A84" }}>
+                  <Card.Body
+                    className="d-flex flex-column"
+                    style={{ color: "#003a84" }}
+                  >
                     <Card.Title className="fw-bold">{service.title}</Card.Title>
                     <Card.Text>{service.description}</Card.Text>
-                    <Button
-                      className="mt-2 rounded-pill fw-semibold more-info-btn"
-                      style={{
-                        backgroundColor: '#003A84',
-                        border: 'none',
-                        color: 'white',
-                      }}
-                      onClick={() => handleShowModal(service)}
-                    >
-                      Know More
-                    </Button>
+                    <div className="mt-auto">
+                      <Button
+                        className="rounded-pill fw-semibold custom-btn w-100"
+                        onClick={() => handleShowModal(service)}
+                      >
+                        Know More
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </div>
@@ -125,19 +139,27 @@ const Services = () => {
         <div className="custom-backdrop" onClick={handleCloseModal}>
           <div className="glass-modal-box" onClick={(e) => e.stopPropagation()}>
             <div className="glass-modal-content">
-              <button className="modal-close-btn" onClick={handleCloseModal}>×</button>
+              <button className="modal-close-btn" onClick={handleCloseModal}>
+                ×
+              </button>
               <h4 className="text-white">{selectedService?.title}</h4>
               <img
                 src={selectedService?.img}
                 alt={selectedService?.title}
                 className="img-fluids mb-3"
-                style={{ borderRadius: '10px' }}
+                style={{ borderRadius: "10px", width: "100%", height: "auto" }}
               />
               <p className="text-white">{selectedService?.description}</p>
-              <hr style={{ borderColor: 'rgba(255,255,255,0.2)' }} />
-              <p className="text-white"><strong>More Info:</strong> {selectedService?.moreInfo}</p>
+              <hr style={{ borderColor: "rgba(255,255,255,0.2)" }} />
+              <p className="text-white">
+                <strong>More Info:</strong> {selectedService?.moreInfo}
+              </p>
               <div className="text-end mt-3">
-                <Button variant="light" onClick={handleCloseModal} className="fw-semibold">
+                <Button
+                  variant="light"
+                  onClick={handleCloseModal}
+                  className="fw-semibold"
+                >
                   Close
                 </Button>
               </div>
@@ -146,7 +168,7 @@ const Services = () => {
         </div>
       )}
 
-      {/* Styles */}
+      {/* CSS Styles */}
       <style>{`
         .glass-card {
           position: relative;
@@ -218,10 +240,16 @@ const Services = () => {
           right: 0;
         }
 
-        .more-info-btn:hover {
+        .custom-btn {
+          background-color: #003A84 !important;
+          border: none;
+          color: white !important;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .custom-btn:hover {
           background-color: #0056b3 !important;
           transform: scale(1.05);
-          transition: all 0.3s ease-in-out;
         }
 
         .custom-backdrop {
@@ -258,6 +286,12 @@ const Services = () => {
           border: none;
           color: white;
           cursor: pointer;
+        }
+
+        @media (max-width: 576px) {
+          .card-img-top {
+            height: 120px !important;
+          }
         }
       `}</style>
     </section>

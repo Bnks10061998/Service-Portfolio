@@ -16,7 +16,7 @@ const About = () => {
           <img
             src={image}
             alt="Illustration"
-            className="img-fluid"
+            className="img-fluids"
             style={{ maxHeight: "400px" }}
           />
         </div>

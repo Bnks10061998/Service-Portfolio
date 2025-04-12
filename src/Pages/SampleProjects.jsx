@@ -71,7 +71,7 @@ const SampleProjects = () => {
 
   return (
     <div className="sample-container">
-      <div className="container my-5">
+      <div className="container ">
         <h2 className="sample-heading">Our Projects</h2>
         <div className="row justify-content-center">
           {sampleProjects.slice(0, visibleCount).map((project, index) => (
@@ -83,13 +83,17 @@ const SampleProjects = () => {
                   alt={project.title}
                 />
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title sample-title">{project.title}</h5>
-                  <p className="card-text sample-desc">{project.description}</p>
+                  <h5 className="card-title sample-title fw-semibold">
+                    {project.title}
+                  </h5>
+                  <p className="card-text sample-desc ">
+                    {project.description}
+                  </p>
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn royal-btn mt-auto"
+                    className="rounded-pill btn royal-btn mt-auto"
                   >
                     View Demo
                   </a>
@@ -100,7 +104,10 @@ const SampleProjects = () => {
         </div>
 
         <div className="text-center">
-          <button className="btn royal-btn mt-4" onClick={handleToggleProjects}>
+          <button
+            className="rounded-pill btn royals-btn mt-4"
+            onClick={handleToggleProjects}
+          >
             {isAllVisible ? "Show Less" : "Load More"}
           </button>
         </div>

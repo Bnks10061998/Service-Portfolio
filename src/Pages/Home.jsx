@@ -6,7 +6,6 @@ import animationData from "../Assets/home.json";
 import Lottie from "lottie-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
-import About from "./About";
 
 const Home = () => {
   return (

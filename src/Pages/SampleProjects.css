@@ -1,5 +1,3 @@
-/* src/components/SampleProjects.css */
-
 .sample-container {
   background-color: white;
 }
@@ -42,23 +40,48 @@
 }
 
 .sample-desc {
-  color: #6c757d;
+  color: #003a84;
   flex-grow: 1;
 }
 
 .royal-btn {
-  background-color: #003a84;
+  background-color: #003a84 !important;
   color: white;
-  border: none;
-  padding: 10px 24px;
+  border: 2px solid #003a84 !important;
+  padding: 6px 12px;
   font-weight: 500;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .royal-btn:hover {
-  background-color: #1c4a8b;
+  background-color: #2960ac !important;
+  border: 2px solid #003a84 !important;
   color: white;
+}
+
+.royals-btn {
+  background-color: #003a84 !important;
+  color: white;
+  border: 2px solid #003a84 !important;
+  padding: 6px 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.royals-btn:hover {
+  background-color: #2960ac !important;
+  border: 2px solid #003a84 !important;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .royals-btn {
+    width: 30%;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
 }
 
 @keyframes fadeImage {
@@ -81,7 +104,7 @@
 }
 
 .sample-card:hover .sample-desc {
-  color: #495057;
+  color: #1c4a8b !important;
 }
 .sample-card:hover .royal-btn {
   background-color: #1c4a8b;

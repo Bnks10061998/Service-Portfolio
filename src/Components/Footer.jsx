@@ -120,7 +120,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div className="col-md-5 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <i className="bi bi-geo-fill me-2"></i>
