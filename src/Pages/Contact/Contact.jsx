@@ -18,14 +18,42 @@ const Contact = () => {
     }
   };
 
-  const { values, handleChange, handleSubmit } = useFormik({
+  // Validation function
+  const validate = (values) => {
+    const errors = {};
+
+    if (values.name.length < 3) {
+      errors.name = "Name should be greater than 2 characters";
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(values.email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+    if (values.phone.length !== 10 || isNaN(values.phone)) {
+      errors.phone = "Phone number must be exactly 10 digits";
+    }
+
+    if (values.message.length < 10) {
+      errors.message = "Message should be greater than 10 characters";
+    }
+
+    return errors;
+  };
+
+  const { values, handleChange, handleSubmit, errors, touched } = useFormik({
     initialValues: {
       name: "",
       email: "",
       phone: "",
       message: "",
     },
+    validate, // Adding validation function
     onSubmit,
+    validateOnChange: true,  // Validate on change (immediate validation)
+    validateOnBlur: true,    // Validate on blur (when user leaves a field)
+    validateOnSubmit: false, // No need to validate on submit, it's already handled
   });
 
   return (
@@ -64,6 +92,9 @@ const Contact = () => {
                   value={values.name}
                 />
                 <span>First name</span>
+                {touched.name && errors.name && (
+                  <div className="error">{errors.name}</div>
+                )}
               </div>
               <div className="inputBox">
                 <input
@@ -75,6 +106,9 @@ const Contact = () => {
                   value={values.email}
                 />
                 <span>Email</span>
+                {touched.email && errors.email && (
+                  <div className="error">{errors.email}</div>
+                )}
               </div>
               <div className="inputBox">
                 <input
@@ -86,6 +120,9 @@ const Contact = () => {
                   value={values.phone}
                 />
                 <span>Phone</span>
+                {touched.phone && errors.phone && (
+                  <div className="error">{errors.phone}</div>
+                )}
               </div>
               <div className="inputBox">
                 <textarea
@@ -97,6 +134,9 @@ const Contact = () => {
                   value={values.message}
                 ></textarea>
                 <span>Message</span>
+                {touched.message && errors.message && (
+                  <div className="error">{errors.message}</div>
+                )}
               </div>
               <button
                 className="btn w-100 text-white fw-semibold"
