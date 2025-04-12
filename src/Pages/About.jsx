@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../assets/Home10.png";
-import "../App.css";
+import "./Home.css";
 const stats = [
   { number: "9", label: "Time Size" },
   { number: "6+", label: "Demo Project" },
