@@ -6,6 +6,8 @@ import animationData from "../Assets/home.json";
 import Lottie from "lottie-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (

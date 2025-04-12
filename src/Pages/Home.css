@@ -1,12 +1,16 @@
+
+
+
 /* General Home Section Styling */
 .home-header {
-    padding-top: 80px !important;
-    color: aliceblue;
-   
+    padding-top: 40px !important;
+    color: #fff;
+    /* aliceblue; */
   }
   
   /* Curved Background */
   .curved-border {
+    margin-top: 0px !important;
     height: 650px;
     background: linear-gradient(110deg, #003a84);
     border-bottom-right-radius: 100% 90%;

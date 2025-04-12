@@ -26,10 +26,12 @@ const ScrollToTopButton = () => {
         </button>
       )}
 
-      <style>{`
-        .scroll-to-top-btn {
+<style>{`
+  .scroll-to-top-btn {
     background: linear-gradient(to top, #00287A, #0040B3);
-    box-shadow: 0 6px 0 #001d5c, 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 6px 0 #123c7a,             /* base shadow (depth) */
+      0 10px 20px rgba(0, 64, 179, 0.3); /* outer blur */
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -42,19 +44,25 @@ const ScrollToTopButton = () => {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
   }
 
   .scroll-to-top-btn:hover {
-    background: linear-gradient(to top, #0040B3, #0056b3);
     transform: translateY(-2px);
-    box-shadow: 0 8px 0 #001d5c, 0 12px 20px rgba(0, 0, 0, 0.35);
+    box-shadow:
+      0 8px 0 #0f3d91,
+      0 12px 22px rgba(0, 64, 179, 0.35);
   }
 
   .scroll-to-top-btn:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0 #001d5c, 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px);
+    box-shadow:
+      0 2px 0 #0f3d91,
+      0 4px 10px rgba(0, 64, 179, 0.2);
   }
-      `}</style>
+`}</style>
     </>
   );
 };
