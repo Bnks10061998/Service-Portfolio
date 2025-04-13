@@ -6,10 +6,9 @@ import animationData from "../Assets/home.json";
 import Lottie from "lottie-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
-import { Link } from "react-router-dom";
-
-
+import { Link} from "react-router-dom";
 const Home = () => {
+ 
   return (
     <>
       <div className="curved-border">
@@ -47,10 +46,10 @@ const Home = () => {
                       is to simplify your life with our innovative
                       products and services.
                     </p>
-                    <div className="text-center ">
+                    <div className="text-center "><Link to="contact">
                       <button className="contact-us-btn text-start">
                         Contact Us
-                      </button>
+                      </button></Link>
                     </div>
                   </div>
                 </Col>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import './Nav.css'; 
-
+import { Link} from "react-router-dom";
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -36,8 +36,8 @@ const Nav = () => {
       </div>
 
       <ul className="menu-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
 
         <li
           className={`dropdown ${isMobile && isDropdownOpen ? 'open' : ''}`}
@@ -49,6 +49,7 @@ const Nav = () => {
           {/* className="dropdown-toggle" */}
             Services <FaChevronDown  className="dropdown-icon"/>
           </div>
+          <Link to="services">
 
           <ul className="dropdown-menu">
             <li><a href="#">Web Development</a></li>
@@ -56,12 +57,12 @@ const Nav = () => {
             <li><a href="#">UI/UX Designing</a></li>
             <li><a href="#">Cloud Services</a></li>
             <li><a href="#">IT Support & Maintenance</a></li>
-          </ul>
+          </ul></Link>
         </li>
 
-        <li><a href="#team">Team Profile</a></li>
+        <li><Link to="/team">Team Profile</Link></li>
         <li><a href="#stack">Tech Stack</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><Link to="contact">Contact Us</Link></li>
       </ul>
     </nav>
   );

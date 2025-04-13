@@ -18,9 +18,9 @@ body {
   z-index: 1000;
 } */
  .navbar{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: sticky !important;
+  top: 0 !important;
+z-index: 1000 !important;
   display: flex;
   align-items: center;
   justify-content: flex-start;
