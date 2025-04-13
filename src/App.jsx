@@ -13,12 +13,14 @@ import ScrollToTop from "./ScrollToTop";
 import React, { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Nav from "./Components/Nav";
+import TechStack from "./Components/TechStack";
 
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const teamRef = useRef(null);
+  const techstackRef = useRef(null);
   const contactRef = useRef(null);
 
   const location = useLocation();
@@ -43,6 +45,9 @@ function App() {
         break;
       case "/contact":
         scrollToSection(contactRef);
+        break;
+      case "/techstack":
+        scrollToSection(techstackRef);
         break;
       default:
         scrollToSection(homeRef);
@@ -96,6 +101,9 @@ function App() {
       </div>
       <div ref={teamRef}>
         <TeamProfiles />
+      </div>
+      <div ref={techstackRef}>
+        <TechStack />
       </div>
       <SampleProjects />
       <div ref={contactRef}>
