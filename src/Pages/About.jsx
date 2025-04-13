@@ -25,7 +25,7 @@ const About = () => {
         <div className="col-md-6">
           <h2 className="fw-bold mb-3">About Us</h2>
           <div
-            className="mb-3"
+            className="mb-3 gradient-line"
             style={{
               height: "4px",
               width: "120px",

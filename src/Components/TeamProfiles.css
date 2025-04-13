@@ -14,6 +14,7 @@ body {
   .team-title {
     font-size: 2.5rem;
     margin-bottom: 40px;
+    margin: 20px;
   }
   
   .team-grid {

@@ -78,7 +78,6 @@ const techStack = {
       name: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     },
-
     {
       name: "Postman",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
@@ -93,7 +92,7 @@ const techStack = {
 const TechStack = () => {
   return (
     <section className="techstack-section" id="techstack">
-      <div className="container-fluid vh-100 d-flex align-items-center scroll-item">
+      <div className="container-fluid py-5 scroll-item">
         <div className="row w-100 align-items-center justify-content-center px-5">
           {/* Left: Info */}
           <div className="col-md-5 px-5">

@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import TeamProfiles from "./Components/TeamProfiles";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route,  Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Topbar from "./Topbar";
 import ScrollToTop from "./ScrollToTop";
 import React, { useRef, useEffect } from "react";
@@ -55,64 +55,61 @@ function App() {
     }
   }, [location]);
 
-
   return (
-    
     <>
-    {/* <Nav /> */}
-   
-    {/* <BrowserRouter>
+      {/* <Nav /> */}
+
+      {/* <BrowserRouter>
     <Topbar/>
     <ScrollToTop />
     <ScrollToTopButton/>
         <Routes>
     */}
-    {/* <Route path="/" element={<Topbar/>} > */}
-    {/* <Route index element={<Home/>} />
+      {/* <Route path="/" element={<Topbar/>} > */}
+      {/* <Route index element={<Home/>} />
     <Route path="/about" element={<About/>} />
     <Route path="/services" element={<Services/>} />
     <Route path="/team" element={<TeamProfiles/>} />
     <Route path="/projects" element={<SampleProjects/>} />
     <Route path="/contact" element={<Contact/>} />
     {/* </Route> */}
-    {/* </Routes> */}
-    {/* </BrowserRouter> */} 
-    {/* <div id="home"><Home /></div>
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
+      {/* <div id="home"><Home /></div>
     <div id="about"><About /></div>
     <div id="services"><Services /></div>
     <div id="team"><TeamProfiles /></div>
     <div id="projects"><SampleProjects/></div>
     <div id="contact"><Contact /></div> */}
-   
-    {/* <Footer /> */}
-    
-    <div>
-      <Nav/>
-      <ScrollToTopButton />
 
-      <div ref={homeRef}>
-        <Home />
-      </div>
-      <div ref={aboutRef}>
-        <About />
-      </div>
-      <div ref={servicesRef}>
-        <Services />
-      </div>
-      <div ref={teamRef}>
-        <TeamProfiles />
-      </div>
-      <div ref={techstackRef}>
-        <TechStack />
-      </div>
-      <SampleProjects />
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-      <Footer />
-    </div>
+      {/* <Footer /> */}
 
-  </>
+      <div>
+        <Nav />
+        <ScrollToTopButton />
+
+        <div ref={homeRef}>
+          <Home />
+        </div>
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <div ref={servicesRef}>
+          <Services />
+        </div>
+        <div ref={teamRef}>
+          <TeamProfiles />
+        </div>
+        <div ref={techstackRef}>
+          <TechStack />
+        </div>
+        <SampleProjects />
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

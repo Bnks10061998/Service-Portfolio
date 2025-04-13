@@ -97,7 +97,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Col md={6} lg={4} className="mb-4" key={index}>
               <div
-                className="glass-card tilt-card h-100"
+                className="glass-cards tilt-card h-100"
                 ref={(el) => (cardRefs.current[index] = el)}
               >
                 <div className="border-line"></div>
@@ -170,7 +170,7 @@ const Services = () => {
 
       {/* CSS Styles */}
       <style>{`
-        .glass-card {
+        .glass-cards {
           position: relative;
           padding: 2px;
           background: rgba(255, 255, 255, 0.08);
@@ -212,16 +212,16 @@ const Services = () => {
           transform-origin: right;
         }
 
-        .glass-card:hover .border-line::before {
+        .glass-cards:hover .border-line::before {
           width: 100%;
         }
 
-        .glass-card:hover .border-line::after {
+        .glass-cards:hover .border-line::after {
           width: 100%;
         }
 
-        .glass-card:hover::before,
-        .glass-card:hover::after {
+        .glass-cards:hover::before,
+        .glass-cards:hover::after {
           content: '';
           position: absolute;
           height: 100%;
@@ -230,12 +230,12 @@ const Services = () => {
           transition: all 1s ease;
         }
 
-        .glass-card:hover::before {
+        .glass-cards:hover::before {
           top: 0;
           left: 0;
         }
 
-        .glass-card:hover::after {
+        .glass-cards:hover::after {
           top: 0;
           right: 0;
         }
