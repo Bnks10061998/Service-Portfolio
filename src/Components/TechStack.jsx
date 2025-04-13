@@ -1,6 +1,6 @@
 import React from "react";
 import "./TechStack.css";
-
+import image from "../assets/techstack.jpg";
 const techStack = {
   frontend: [
     {
@@ -95,19 +95,19 @@ const TechStack = () => {
       <div className="container-fluid py-5 scroll-item">
         <div className="row w-100 align-items-center justify-content-center px-5">
           {/* Left: Info */}
-          <div className="col-md-5 px-5">
+          <div className="col-md-5 px-60">
             <h2 className="display-5 fw-bold mb-4">Our Tech Stack</h2>
             <p>
-              Our tech stack is carefully curated to build fast, secure, and
-              scalable digital solutions. Whether it’s a dynamic web platform, a
-              mobile app, or a powerful backend service — we use the best tools
-              in the industry.
+            Our tech stack is built for performance, creativity, and scalability. On the frontend, we use HTML5, CSS3, and JavaScript to craft responsive and engaging user interfaces tailored to modern web standards. The backend is powered by Java and PostgreSQL, delivering secure, high-performance server-side logic and reliable data management. For design, we utilize industry-leading tools like Figma, Adobe XD, and Photoshop to create intuitive, user-friendly interfaces and polished visuals. This combination ensures a smooth workflow from concept to deployment, enabling us to build visually striking and functionally strong digital products that deliver real value to users.
             </p>
-            <p className="mt-3">
-              From modern UI/UX design systems to cutting-edge cloud and
-              database tools, we ensure every solution is built for performance
-              and excellence.
-            </p>
+            <img
+                       src={image}
+                       alt="Illustration"
+                       className="img-tech"
+                      
+                     />
+               
+            
           </div>
 
           {/* Right: Tech Cards */}

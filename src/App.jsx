@@ -21,6 +21,7 @@ function App() {
   const servicesRef = useRef(null);
   const teamRef = useRef(null);
   const techstackRef = useRef(null);
+  const projectsRef = useRef(null)
   const contactRef = useRef(null);
 
   const location = useLocation();
@@ -48,6 +49,9 @@ function App() {
         break;
       case "/techstack":
         scrollToSection(techstackRef);
+        break;
+        case "/projects":
+        scrollToSection(projectsRef);
         break;
       default:
         scrollToSection(homeRef);
@@ -103,7 +107,9 @@ function App() {
         <div ref={techstackRef}>
           <TechStack />
         </div>
+        <div ref={projectsRef}>
         <SampleProjects />
+        </div>
         <div ref={contactRef}>
           <Contact />
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../assets/la.jpg";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   const socialLinks = {
     facebook: "https://www.facebook.com/yourpage",
@@ -19,6 +19,7 @@ const Footer = () => {
         .hover-white {   
           transition: opacity 0.3s;
           text-decoration: none !important; 
+          
         }
         .hover-white:hover {
           text-decoration: underline !important;
@@ -41,6 +42,11 @@ const Footer = () => {
           box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
           transform: scale(1.1);
         }
+        .text-uppercase{
+          font-weight: 0;
+          font-size: 17px;
+        }
+        
       `}</style>
 
       {/* Social Section */}
@@ -89,8 +95,8 @@ const Footer = () => {
 
             {/* Links */}
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Links</h6>
-              {["Dashboard", "About us", "Services", "Projects"].map(
+              <h6 className="text-uppercase fw-bold mb-4 ">Links</h6>
+              {/* {["Dashboard", "About us", "Services", "Projects"].map(
                 (item, idx) => (
                   <p key={idx}>
                     <a
@@ -101,13 +107,53 @@ const Footer = () => {
                     </a>
                   </p>
                 )
-              )}
+              )} */}
+              <p>
+    <Link to="/dashboard" className="text-white hover-white text-decoration-none">
+      Dashboard
+    </Link>
+  </p>
+  <p>
+    <Link to="/about" className="text-white hover-white text-decoration-none">
+      About
+    </Link>
+  </p>
+  <p>
+    <Link to="/services" className="text-white hover-white text-decoration-none">
+      Services
+    </Link>
+  </p>
+  <p>
+    <Link to="/projects" className="text-white hover-white text-decoration-none">
+      Projects
+    </Link>
+  </p>
             </div>
 
             {/* Guides */}
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Guides</h6>
-              {["Get start", "Contact us", "FAQ", "Help"].map((item, idx) => (
+              <p>
+    <Link to="/dashboard" className="text-white hover-white text-decoration-none">
+    Get start
+    </Link>
+  </p>
+  <p>
+    <Link to="/contact" className="text-white hover-white text-decoration-none">
+    Contact us
+    </Link>
+  </p>
+  <p>
+    <Link to="/contact" className="text-white hover-white text-decoration-none">
+    FAQ
+    </Link>
+  </p>
+  <p>
+    <Link to="/contact" className="text-white hover-white text-decoration-none">
+    Help
+    </Link>
+  </p>
+              {/* {["Get start", "Contact us", "FAQ", "Help"].map((item, idx) => (
                 <p key={idx}>
                   <a
                     href="#!"
@@ -116,7 +162,7 @@ const Footer = () => {
                     {item}
                   </a>
                 </p>
-              ))}
+              ))} */}
             </div>
 
             {/* Contact Info */}
