@@ -27,6 +27,7 @@ const techStack = {
       name: "Flutter",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
     },
+    
   ],
   backend: [
     {
@@ -49,6 +50,10 @@ const techStack = {
     {
       name: "PostgreSQL",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    },
+    {
+      name: "Python",
+      icon: "https://images.ctfassets.net/em6l9zw4tzag/oVfiswjNH7DuCb7qGEBPK/b391db3a1d0d3290b96ce7f6aacb32b0/python.png",
     },
   ],
   Design: [
@@ -85,6 +90,10 @@ const techStack = {
     {
       name: "VS Code",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    },
+    {
+      name: "Pycharm",
+      icon: "https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png",
     },
   ],
 };

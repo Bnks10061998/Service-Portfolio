@@ -19,25 +19,25 @@ const Home = () => {
             <Container className="home-content">
               <Row>
                 <Col md={7} className="home-header">
-                  <h1 style={{ paddingBottom: 15 }} className="heading">
+                  <h2 style={{ paddingBottom: 15 }} className="heading">
                     Hi There!{" "}
                     <span className="wave" role="img" aria-labelledby="wave">
                       👋🏻
                     </span>
-                  </h1>
+                  </h2>
 
-                  <h1 className="heading-name">
+                  <h2 className="heading-name">
                     <strong className="main-name">
                       {" "}
                       We Are Developers From INDIA
                     </strong>
-                  </h1>
+                  </h2>
 
                   <div style={{ padding: 50, textAlign: "left" }}>
                     <h1 className="diagonal-text text-uppercase p-2" style={{ fontSize: "28px" }}>
                       We Develop,{" "}
                     </h1>
-                    <div className="fs-5 p-2">
+                    <div className="fs-4 p-2">
                       <Type />
                     </div>
                     <p className=" fs-5 p-2">
@@ -46,8 +46,8 @@ const Home = () => {
                       is to simplify your life with our innovative
                       products and services.
                     </p>
-                    <div className="text-center "><Link to="contact">
-                      <button className="contact-us-btn text-start">
+                    <div className="text-center p-4 "><Link to="contact">
+                      <button className="contact-us-btn text-start ">
                         Contact Us
                       </button></Link>
                     </div>

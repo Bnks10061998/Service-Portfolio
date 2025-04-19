@@ -75,7 +75,8 @@ const Footer = () => {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             {/* Company Info */}
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            
               <h4 className="text-uppercase fw-bold mb-4">
                 <img
                   src={image}
@@ -157,7 +158,7 @@ const Footer = () => {
                 <p key={idx}>
                   <a
                     href="#!"
-                    className="text-white hover-white text-decoration-none"
+                    className="text-white hover-white text-decoration-none"git 
                   >
                     {item}
                   </a>
