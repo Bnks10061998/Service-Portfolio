@@ -4,7 +4,7 @@ import './TeamProfiles.css';
 import vishnuImage from '../assets/vishnu.jpg';
 import bharaniImage from '../assets/bharani.jpg';
 import vijayImage from '../assets/vijay2.jpg';
-import kaviyaImage from '../assets/kavi1.jpg';
+import kaviyaImage from '../assets/kaviyagrey1.png';
 import fasilImage from '../assets/fasil.jpg';
 import dheenaImage from '../assets/dheena.jpg';
 import giriImage from '../assets/Giri1.jpg';
