@@ -14,8 +14,6 @@
     width: auto;
   }
 
- 
-
   .company-name {
     font-size: 40px;          
     font-weight: 600;          
@@ -85,8 +83,8 @@
   }
 
   .director-card .card-image {
-    width:360px;
-    height: 250px;
+    width:370px;
+    height: 300px;
     margin-top: -90px;
     margin-left: -140px;
     margin-bottom: 50px;
@@ -127,9 +125,6 @@
     margin-top: 0;
     padding-top: 0;
     padding-left: 5rem;
-    /* flex: 1;
-    min-width: 80px;
-    text-align: left; */
   }
   .ceo-image-angle {
     flex: 1;
@@ -159,7 +154,7 @@
 
   .angled-image {
     width: 330%; 
-    height: 330px; 
+    height: 330px;
   }
   
   

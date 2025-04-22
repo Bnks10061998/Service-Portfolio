@@ -4,12 +4,12 @@ import './TeamProfiles.css';
 import vishnuImage from '../assets/vishnu.jpg';
 import bharaniImage from '../assets/bharani.jpg';
 import vijayImage from '../assets/vijay2.jpg';
-import kaviyaImage from '../assets/download (2).jpeg';
+import kaviyaImage from '../assets/kavi1.jpg';
 import fasilImage from '../assets/fasil.jpg';
-import dheenaImage from '../assets/deena.jpg';
-import giriImage from '../assets/giri.jpg';
-import anbu from '../assets/Anbu.jpg';
-import rasith from '../assets/khan.jpg';
+import dheenaImage from '../assets/dheena.jpg';
+import giriImage from '../assets/Giri1.jpg';
+import anbu from '../assets/anbu.jpg';
+import rasith from '../assets/rasith.jpg';
 // import ProfileCard from './SingleCard';
 // import './SingleCard.css';
 

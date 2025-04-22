@@ -88,11 +88,12 @@ const Nav = () => {
               <Link to="/services">IT Support & Maintenance</Link>
             </li>
             <li>
-              <Link to="/services">Blockchain</Link>
-            </li>
-            <li>
               <Link to="/services">AI & ML</Link>
             </li>
+            <li>
+              <Link to="/services">Blockchain</Link>
+            </li>
+            
             <li>
               <Link to="/services">Deep Learning</Link>
             </li>
@@ -109,7 +110,7 @@ const Nav = () => {
           <Link to="/contact">Contact Us</Link>
         </li>
         <li>
-          <Link to="/about">Investor Relations</Link>
+          <Link to="/investor">Investor Relations</Link>
         </li>
       </ul>
     </nav>
