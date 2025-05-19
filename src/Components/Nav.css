@@ -21,7 +21,7 @@ body {
   position: sticky !important;
   top: 0 !important;
   z-index: 1000 !important;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: flex-start;
   padding: 0.5rem 2rem;
@@ -35,17 +35,30 @@ body {
   margin-left: 50px;
   margin-right: 26rem;
 }
+.rounded-circle{
+  margin-left: -1rem;
 
+}
 .strike-text {
   margin-left: 25px;
   font-size: 25px;
   font-weight: bold;
   color: white;
+  /* margin-top: 10px; */
 }
-
+.rede{
+ font-size: 32px;
+  color: #00bfff;
+  margin-left: 10px;
+  margin-top: 40px;
+  /* display: block; */
+}
 .red {
   font-size: 32px;
   color: #00bfff;
+  /* margin-left: 10px; */
+  margin-bottom: -1rem;
+  /* margin-top: 100px; */
 }
 
 .menu-links {
@@ -358,7 +371,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .menu-links {
     flex-direction: column;
     background: #003a84;

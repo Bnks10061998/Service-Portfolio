@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-
+import logo from "../assets/la.jpg";
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -36,8 +36,15 @@ const Nav = () => {
       <div className="strike-container">
         <h1 className="strike-text">
           <Link to="#" className="text-decoration-none text-white">
-            <span className="red">L</span>east&nbsp;
+          
+
+            <div>
+            
+           <img src={logo} alt="" className="rounded-circle " style={{ height: '50px', width: '52px' }} />
+         
+              <span className="rede ">L</span>east&nbsp;
             <span className="red">A</span>ction
+            </div>
           </Link>
         </h1>
       </div>
